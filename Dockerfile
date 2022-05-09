@@ -11,4 +11,4 @@ RUN apt-get update \
     && apt-get clean 
 
 COPY entrypoint.sh /docker-entrypoint-initdb.d
-COPY dbseed.sql /docker-entrypoint-initdb.d
+COPY ticket_merchant.sql /docker-entrypoint-initdb.d
