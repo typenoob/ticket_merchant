@@ -7,12 +7,4 @@ RUN apt-get update \
     && apt autoremove -y \
     && apt-get clean 
 
-WORKDIR /workdir
-RUN su postgres \
-    && createdb ticket_merchant 
-
-RUN npx sequelize-cli db:migrate \
-    && npx sequelize-cli db:seed:all
-    
-
-ENTRYPOINT ["npm start"]
+COPY entrypoint.sh /docker-entrypoint-initdb.d
