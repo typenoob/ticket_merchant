@@ -6,7 +6,7 @@ ENV POSTGRES_DB ticket_merchant
 
 WORKDIR /workdir
 RUN apt-get update \
-    && apt-get install -y nodejs \
+    && apt-get install -y nodejs npm \
     && apt autoremove -y \
     && apt-get clean 
 
