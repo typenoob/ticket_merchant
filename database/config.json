@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "chen..02",
+    "database": "ticket_merchant_test",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "chen..02",
+    "database": "ticket_merchant_bak",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "chen..02",
+    "database": "ticket_merchant_pro",
+    "host": "127.0.0.1",
+    "dialect": "postgresql"
+  }
+}
