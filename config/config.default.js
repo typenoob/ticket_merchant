@@ -29,7 +29,7 @@ module.exports = appInfo => {
     host: 'localhost',    // 服务主机地址
     port: 5432,   // 端口
     username: 'postgres', // 用户名
-    password: 'chen..02', // 密码
+    password: 'password', // 密码
 
     // 其他默认配置参数
   };
