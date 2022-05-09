@@ -8,3 +8,4 @@ RUN apt-get update \
     && apt-get clean 
 
 COPY entrypoint.sh /docker-entrypoint-initdb.d
+COPY init.sql /docker-entrypoint-initdb.d
