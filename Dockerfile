@@ -1,21 +1,14 @@
-FROM node:14-alpine3.12
+FROM postgres:14.2
+COPY . /workdir
+ENV POSTGRES_USER coyote
+ENV POSTGRES_PASSWORD 123456
+ENV POSTGRES_DB ticket_merchant
 
-# Create app directory
-WORKDIR /usr/src/app
+WORKDIR /workdir
+RUN apt-get update \
+    && apt-get install -y nodejs npm \
+    && apt autoremove -y \
+    && apt-get clean 
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-# copying packages first helps take advantage of docker layers
-COPY package*.json ./
-
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
-
-# Bundle app source
-COPY . .
-
-EXPOSE 8080
-
-CMD [ "npm",  "start" ]
+COPY entrypoint.sh /docker-entrypoint-initdb.d
+COPY dbseed.sql /docker-entrypoint-initdb.d
