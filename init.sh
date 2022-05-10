@@ -1,1 +1,1 @@
-pg_restore -d ticket_merchant -U postgres ./ticket_merchant.backup
+pg_restore -d ticket_merchant -U coyote ./ticket_merchant.backup
