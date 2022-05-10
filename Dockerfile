@@ -5,6 +5,8 @@ RUN apt-get update \
     && apt autoremove -y \
     && apt-get clean 
 
+RUN sudo service postgresql start
+
 RUN sudo -u postgres bash -c "psql -c \"CREATE DATABASE ticket_merchant;\"" \
     && sudo -u postgres bash -c "psql -c \"CREATE USER coyote WITH PASSWORD '123456';\"" \
     && sudo -u postgres bash -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE ticket_merchant TO coyote;\""
