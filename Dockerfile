@@ -1,12 +1,13 @@
 FROM node:14
-COPY . /workdir
 
 WORKDIR /workdir
 
+COPY package*.json ./
+
 RUN npm i
 
-RUN npm install --save-dev sequelize-cli \
-    && npx sequelize-cli db:migrate \
-    && npx sequelize-cli db:seed:all
+COPY . .
 
-CMD ["npm" "start"]
+EXPOSE 7001
+
+CMD ["npm","start"]
