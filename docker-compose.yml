@@ -20,6 +20,6 @@ services:
     ports:
       - "5432:5432"
     volumes: 
-      - ./ticket_merchant.sql:/docker-entrypoint-initdb.d/ticket_merchant.sql
+      - ./ticket_merchant.backup:/docker-entrypoint-initdb.d/ticket_merchant.backup
       - ./init.sh:/docker-entrypoint-initdb.d/init.sh
 
