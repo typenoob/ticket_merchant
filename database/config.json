@@ -3,21 +3,21 @@
     "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
-    "host": "localhost",
+    "host": "postgres",
     "dialect": "postgresql"
   },
   "test": {
     "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
-    "host": "localhost",
+    "host": "postgres",
     "dialect": "postgresql"
   },
   "production": {
     "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
-    "host": "localhost",
+    "host": "postgres",
     "dialect": "postgresql"
   }
 }
