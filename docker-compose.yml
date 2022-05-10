@@ -1,0 +1,17 @@
+version: "3"
+services:
+  app:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "7001:7001"
+
+  postgres:
+    image: postgres:14.2-alpine
+    environment:
+      POSTGRES_USER: coyote
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DATABASE: ticket_merchant
+    ports:
+      - "5432:5432"
