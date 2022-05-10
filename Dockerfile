@@ -1,7 +1,7 @@
 FROM node:14
 COPY . /workdir
 RUN apt-get update \
-    && apt-get install -y postgresql \
+    && apt-get install -y postgresql sudo \
     && apt autoremove -y \
     && apt-get clean 
 
