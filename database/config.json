@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "postgres",
+    "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "postgres",
+    "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
     "dialect": "postgresql"
   },
   "production": {
-    "username": "postgres",
+    "username": "coyote",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
