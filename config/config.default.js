@@ -27,9 +27,9 @@ module.exports = appInfo => {
     dialect: 'postgres', // 支持 mysql, mariadb, postgres, mssql等数据库
     database: 'ticket_merchant', // 数据库名称
     host: 'localhost',    // 服务主机地址
-    port: 5432,   // 端口
-    username: 'postgres', // 用户名
-    password: 'password', // 密码
+    port: 15432,   // 端口
+    username: 'coyote', // 用户名
+    password: '123456', // 密码
 
     // 其他默认配置参数
   };
