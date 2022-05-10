@@ -5,7 +5,7 @@ RUN apt-get update \
     && apt autoremove -y \
     && apt-get clean 
 
-RUN rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
+RUN service postgresql start
 
 RUN sudo -u postgres bash -c "psql -c \"CREATE DATABASE ticket_merchant;\"" \
     && sudo -u postgres bash -c "psql -c \"CREATE USER coyote WITH PASSWORD '123456';\"" \
