@@ -4,7 +4,7 @@
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "15432",
+    "port": "5432",
     "dialect": "postgresql"
   },
   "test": {
@@ -12,7 +12,7 @@
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "15432",
+    "port": "5432",
     "dialect": "postgresql"
   },
   "production": {
@@ -20,7 +20,7 @@
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "15432",
+    "port": "5432",
     "dialect": "postgresql"
   }
 }
