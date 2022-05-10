@@ -26,7 +26,7 @@ module.exports = appInfo => {
   config.sequelize = {
     dialect: 'postgres', // 支持 mysql, mariadb, postgres, mssql等数据库
     database: 'ticket_merchant', // 数据库名称
-    host: 'localhost',    // 服务主机地址
+    host: '123456',    // 服务主机地址
     port: 15432,   // 端口
     username: 'coyote', // 用户名
     password: '123456', // 密码
