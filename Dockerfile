@@ -6,10 +6,10 @@ RUN apt-get update \
     && apt-get clean 
 
 RUN service postgresql start
-
-RUN sudo -u postgres bash -c "psql -c \"CREATE DATABASE ticket_merchant;\"" \
-    && sudo -u postgres bash -c "psql -c \"CREATE USER coyote WITH PASSWORD '123456';\"" \
-    && sudo -u postgres bash -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE ticket_merchant TO coyote;\""
+RUN service postgresql status
+RUN sudo -u postgres bash -c "psql -h 0.0.0.0 -c \"CREATE DATABASE ticket_merchant;\"" \
+    && sudo -u postgres bash -c "psql -h 0.0.0.0 -c \"CREATE USER coyote WITH PASSWORD '123456';\"" \
+    && sudo -u postgres bash -c "psql -h 0.0.0.0 -c \"GRANT ALL PRIVILEGES ON DATABASE ticket_merchant TO coyote;\""
 
 WORKDIR /workdir
 
