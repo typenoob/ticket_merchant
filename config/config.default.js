@@ -28,7 +28,7 @@ module.exports = appInfo => {
     database: 'ticket_merchant', // 数据库名称
     host: '127.0.0.1',    // 服务主机地址
     port: 5432,   // 端口
-    username: 'coyote', // 用户名
+    username: 'postgres', // 用户名
     password: '123456', // 密码
 
     // 其他默认配置参数
