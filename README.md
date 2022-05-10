@@ -5,6 +5,7 @@
 ## QuickStart
 
 <!-- add docs here for user -->
+`docker-compose up`
 
 see [egg docs][egg] for more detail.
 
