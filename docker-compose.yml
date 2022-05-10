@@ -18,7 +18,7 @@ services:
       POSTGRES_PASSWORD: 123456
       POSTGRES_DATABASE: ticket_merchant
     ports:
-      - "5432:5432"
+      - "15432:5432"
     volumes: 
       - ./ticket_merchant.sql:/docker-entrypoint-initdb.d/ticket_merchant.sql
 
