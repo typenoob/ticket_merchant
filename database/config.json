@@ -1,26 +1,23 @@
 {
   "development": {
-    "username": "coyote",
+    "username": "postgres",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "5432",
     "dialect": "postgresql"
   },
   "test": {
-    "username": "coyote",
+    "username": "postgres",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "5432",
     "dialect": "postgresql"
   },
   "production": {
-    "username": "coyote",
+    "username": "postgres",
     "password": "123456",
     "database": "ticket_merchant",
     "host": "127.0.0.1",
-    "port": "5432",
     "dialect": "postgresql"
   }
 }
