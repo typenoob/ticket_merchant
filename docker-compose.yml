@@ -14,7 +14,7 @@ services:
     image: postgres:14.2-alpine
     restart: always
     environment:
-      POSTGRES_USER: coyote
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
       POSTGRES_DATABASE: ticket_merchant
     ports:
