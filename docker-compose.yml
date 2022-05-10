@@ -6,6 +6,8 @@ services:
       - postgres
     ports:
       - "7001:7001"
+    volumes:
+      - /root/serviceAccountKey.json /workdir/serviceAccountKey.json
 
 
   postgres:
