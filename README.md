@@ -1,14 +1,12 @@
 # ticket_merchant_backend
 
+作为[ticket_merchant](https://github.com/typenoob/ticket_merchant_front_end)的后端，此项目利用[eggjs](https://www.eggjs.org/)+postgresql开发。 
 
+## E-R图
 
-## QuickStart
+![image](https://user-images.githubusercontent.com/61347081/195334205-0794d542-39f6-4dd6-8bec-378c4dbc60ae.png)
 
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
+### 快速启动
 
 ```bash
 $ npm i
@@ -16,23 +14,14 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
-### Deploy
+### 部署
 
 ```bash
 $ npm start
 $ npm stop
 ```
 
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
-
-### DateBase
+### 使用sequelize迁移数据库
 
 - Use `npx sequelize-cli db:migrate ` to migrate the db.
 - Use `npx sequelize-cli db:migrate:undo ` to unmigrate the db.
